@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Digital Art Gallery</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Georgia, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f1e9;
+            color: #3c3b3d;
+        }
+        header {
+            background-color: #8a5a44;
+            color: #f9f6f0;
+            text-align: center;
+            padding: 2em;
+            border-bottom: 5px solid #d7a760;
+        }
+        header h1 {
+            font-size: 2.5em;
+            font-family: 'Garamond', serif;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin: 0;
+        }
+
+        /* Gallery and Section Styles */
+        .gallery-section, .technique-table {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #faf7f0;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+            border: 3px solid #d7a760;  /* Colored border for the gallery section */
+        }
+        .gallery-section h2, .technique-table h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            color: #5b3c1b;
+            font-family: 'Garamond', serif;
+        }
+        .featured-art {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .featured-art figure {
+            width: 100%;
+            max-width: 280px;
+            text-align: center;
+            background-color: #fdf1e4;
+            border: 3px solid #8a5a44;  /* Colored border for each figure */
+            border-radius: 12px;
+            overflow: hidden;
+            padding: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .featured-art img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        figcaption {
+            padding: 10px;
+            font-style: italic;
+            font-size: 1em;
+            color: #5a534b;
+        }
+        figcaption strong {
+            display: block;
+            font-weight: bold;
+            color: #3c3b3d;
+        }
+
+        /* Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 1em;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #b78a5b;
+        }
+        th {
+            background-color: #8a5a44;
+            color: #faf7f0;
+            font-weight: bold;
+        }
+        td {
+            background-color: #fdf1e4;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Classic Digital Art Gallery</h1>
+</header>
+
+<section class="gallery-section">
+    <h2>Featured Art</h2>
+    <div class="featured-art">
+        <!-- Artwork 1 -->
+        <figure>
+            <img src="images/fantasy-shooting-star-landscape-night.jpg" alt="Starry Skies by Lily Monroe">
+            <figcaption>
+                <strong>Title:</strong> Starry Skies<br>
+                <strong>Artist:</strong> Lily Monroe<br>
+                <p>A mesmerizing look at the night sky, inspired by the artist’s late-night walks under the stars.</p>
+            </figcaption>
+        </figure>
+
+        <!-- Artwork 2 -->
+        <figure>
+            <img src="images/dmitry-bukhantsov-zZNra2GcUSQ-unsplash.jpg" alt="Sunlit Meadows by Marco Avelino">
+            <figcaption>
+                <strong>Title:</strong> Sunlit Meadows<br>
+                <strong>Artist:</strong> Marco Avelino<br>
+                <p>This piece captures the warmth and serenity of a sunlit meadow, evoking feelings of peace and nostalgia.</p>
+            </figcaption>
+        </figure>
+
+        <!-- Artwork 3 -->
+        <figure>
+            <img src="images/austin-scherbarth-qSrFTyh-IB0-unsplash.jpg" alt="Urban Reflections by Sara Kim">
+            <figcaption>
+                <strong>Title:</strong> Urban Reflections<br>
+                <strong>Artist:</strong> Sara Kim<br>
+                <p>A thoughtful portrayal of city life, inspired by the reflections seen in rainy streets during Sara's travels.</p>
+            </figcaption>
+        </figure>
+    </div>
+</section>
+
+<section class="technique-table">
+    <h2>Artistic Techniques Used</h2>
+    <table>
+        <tr>
+            <th>Artwork Title</th>
+            <th>Artist</th>
+            <th>Techniques Used</th>
+        </tr>
+        <tr>
+            <td>Starry Skies</td>
+            <td>Lily Monroe</td>
+            <td>Pointillism, Layering, Soft brush textures</td>
+        </tr>
+        <tr>
+            <td>Sunlit Meadows</td>
+            <td>Marco Avelino</td>
+            <td>Impressionism, Bright color gradients, Blending</td>
+        </tr>
+        <tr>
+            <td>Urban Reflections</td>
+            <td>Sara Kim</td>
+            <td>Realism, Contrast shading, Wet brush strokes</td>
+        </tr>
+    </table>
+</section>
+
+</body>
+</html>
